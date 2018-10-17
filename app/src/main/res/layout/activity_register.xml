@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+    <ImageView
+        android:id="@+id/formBack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:foregroundGravity="center"
+        android:src="@mipmap/blur"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4d000000"/>
+    <!--100% — FF--> <!--95% — F2--> <!--90% — E6--> <!--85% — D9-->
+    <!--80% — CC--> <!--75% — BF--> <!--70% — B3--> <!--65% — A6-->
+    <!--60% — 99--> <!--55% — 8C--> <!--50% — 80--> <!--45% — 73-->
+    <!--40% — 66--> <!--35% — 59--> <!--30% — 4D--> <!--25% — 40-->
+    <!--20% — 33--> <!--15% — 26--> <!--10% — 1A--> <!--5% — 0D-->
+    <!--0% — 00-->
+
+
+
+
+    <LinearLayout
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            android:elevation="6dp"
+            android:orientation="vertical"
+
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:paddingTop="10dp"
+                android:text="Welcome To Soleek lab"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:paddingEnd="10dp"
+                android:paddingStart="10dp"
+                android:text="Your Digital Partner"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+
+                />
+            <AutoCompleteTextView
+                android:id="@+id/fullName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@mipmap/person_icon"
+                android:drawablePadding="5dp"
+                android:hint="Full Name"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@mipmap/email_icon"
+                android:drawableTint="@color/dark_grey"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="5dp"
+                android:hint="Email"
+                android:paddingStart="10dp"
+                android:textSize="14sp" />
+
+            <AutoCompleteTextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:drawableTint="@color/dark_grey"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@mipmap/pass_icon"
+                android:drawablePadding="5dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textSize="14sp"
+
+                />
+
+            <AutoCompleteTextView
+                android:id="@+id/confirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/rounded_white"
+                android:drawableLeft="@mipmap/confirm_icon"
+                android:drawableTint="@color/dark_grey"
+                android:drawablePadding="5dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:paddingStart="10dp"
+                android:textSize="14sp"
+
+                />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="36dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/register_button"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Register"
+                android:id="@+id/signup_btn"
+                android:textColor="@color/white"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scrollView"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:id="@+id/login_link"
+        android:text="Already a member? Login"
+        android:textColor="@color/white" />
+</RelativeLayout>
